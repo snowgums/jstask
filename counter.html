@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Number Manipulation</title>
+    </head>
+
+<body>
+    <p id="numberDisplay">0</p>
+    <button onclick="resetNumber()">Reset</button>
+    <button onclick="increaseNumber()">Increase</button>
+    <button onclick="decreaseNumber()">Decrease</button>
+
+<script>
+    let number = 0;
+
+    function displayNumber() {
+      document.getElementById('numberDisplay').innerText = number;
+    }
+
+    function resetNumber() {
+      number = 0;
+      displayNumber();
+    }
+
+    function increaseNumber() {
+      number++;
+      displayNumber();
+    }
+
+    function decreaseNumber() {
+      number--;
+      displayNumber();
+    }
+
+    displayNumber();
+</script>
+
+</body>
+</html>
